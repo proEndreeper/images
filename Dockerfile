@@ -7,7 +7,7 @@ FROM        node:10-alpine
 
 LABEL       author="Michael Parker" maintainer="parker@pterodactyl.io"
 
-RUN         apk add --no-cache --update libc6-compat ffmpeg git make gcc g++ python build-base cairo-dev jpeg-dev pango-dev giflib-dev sqlite-dev sqlite-libs sqlite \
+RUN         apk add --no-cache --update google-chrome-stable fonts-ipafont-gothic fonts-wqy-zenhei fonts-thai-tlwg fonts-kacst fonts-freefont-ttf libxss1 libc6-compat ffmpeg git make gcc g++ python build-base cairo-dev jpeg-dev pango-dev giflib-dev sqlite-dev sqlite-libs sqlite \
             && adduser -D -h /home/container container
 
 USER        container
